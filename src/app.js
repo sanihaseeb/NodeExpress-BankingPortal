@@ -11,7 +11,7 @@ const accounts = JSON.parse(accountData);
 const userData = fs.readFileSync(
     path.join(__dirname, 'json', 'users.json'), 'utf8'
 );
-const user = JSON.parse(userData);
+const users = JSON.parse(userData);
 
 const app = express();
 app.set('views', path.join(__dirname, 'views'));
